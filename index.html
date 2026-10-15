@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. G. Shanmugasundar | Professor & Dean R&D</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo / Name -->
+                <a href="#about" class="flex items-center gap-3">
+                    <img src="image_e36989.png" alt="Dr. G. Shanmugasundar" class="w-10 h-10 rounded-xl object-cover border border-brand-500 shadow-md">
+                    <div>
+                        <span class="text-lg font-bold text-slate-900 block leading-tight">Dr. G. Shanmugasundar</span>
+                        <span class="text-xs text-brand-600 font-medium block">Professor & Dean R&D</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-medium">
+                    <a href="#about" class="px-3 py-2 text-slate-600 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">About Me</a>
+                    <a href="#qualifications" class="px-3 py-2 text-slate-600 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">Qualifications</a>
+                    <a href="#experience" class="px-3 py-2 text-slate-600 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">Experience</a>
+                    <a href="#awards" class="px-3 py-2 text-slate-600 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">Awards & Honors</a>
+                    <a href="#publications" class="px-3 py-2 text-slate-600 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">Publications</a>
+                    <a href="#resume" class="px-3 py-2 text-brand-700 bg-brand-50 hover:bg-brand-100 font-semibold rounded-lg transition border border-brand-200">
+                        <i class="fa-solid fa-file-lines mr-1"></i> Resume
+                    </a>
+                    <a href="#patents-published" class="px-3 py-2 text-slate-600 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">Patents Published</a>
+                    <a href="#patents-granted" class="px-3 py-2 text-slate-600 hover:text-brand-600 rounded-lg hover:bg-slate-100 transition">Patents Granted</a>
+                    <a href="https://drive.google.com/drive/folders/1RK7Nof9QzzKvFCuG95isrOxZw1XOGpQ8?usp=drive_link" target="_blank" class="px-3 py-2 text-amber-700 bg-amber-50 hover:bg-amber-100 font-semibold rounded-lg transition border border-amber-200">
+                        <i class="fa-solid fa-certificate mr-1"></i> Certificates
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1">
+            <a href="#about" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-slate-100">About Me</a>
+            <a href="#qualifications" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-slate-100">Qualifications</a>
+            <a href="#experience" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-slate-100">Experience</a>
+            <a href="#awards" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-slate-100">Awards & Honors</a>
+            <a href="#publications" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-slate-100">Publications</a>
+            <a href="#resume" class="block px-3 py-2 rounded-md font-semibold text-brand-700 bg-brand-50">Resume</a>
+            <a href="#patents-published" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-slate-100">Patents Published</a>
+            <a href="#patents-granted" class="block px-3 py-2 rounded-md text-slate-700 hover:bg-slate-100">Patents Granted</a>
+            <a href="https://drive.google.com/drive/folders/1RK7Nof9QzzKvFCuG95isrOxZw1XOGpQ8?usp=drive_link" target="_blank" class="block px-3 py-2 rounded-md font-semibold text-amber-700 bg-amber-50">Patent Certificates (Drive)</a>
+        </div>
+    </header>
+
+    <!-- HERO / ABOUT ME SECTION -->
+    <section id="about" class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-100 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Profile Photo & Quick Info Box -->
+                <div class="lg:col-span-4 flex flex-col items-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brand-600 to-emerald-500 rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        <img src="image_e36989.png" alt="Dr. G. SHANMUGASUNDAR" class="relative rounded-2xl w-64 h-80 object-cover shadow-2xl border-4 border-white">
+                    </div>
+                    
+                    <!-- Quick LinkedIn Card -->
+                    <a href="https://www.linkedin.com" target="_blank" class="mt-6 w-full max-w-xs flex items-center justify-between p-3.5 bg-white rounded-xl shadow-md border border-slate-200 hover:border-blue-500 hover:shadow-lg transition">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xl">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="text-left">
+                                <span class="text-xs text-slate-400 block uppercase font-bold">LinkedIn Profile</span>
+                                <span class="text-sm font-semibold text-slate-800 block">Dr. G. SHANMUGASUNDAR</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Right Details Column -->
+                <div class="lg:col-span-8 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-100 text-brand-800 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-award"></i> Educator & Robotics Researcher
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-none">
+                        Dr. G. Shanmugasundar
+                    </h1>
+                    <p class="text-xl font-medium text-brand-600">
+                        Professor & Dean R&D | Sri Sairam Engineering College
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        With over <span class="font-bold text-slate-800">22+ years of academic and research excellence</span>, specializing in Robotics, Industrial Automation, Machine Learning, Computer Integrated Manufacturing, and IoT Safety Systems. Leading innovation and research initiatives across prominent engineering institutes.
+                    </p>
+
+                    <!-- Contact Quick Info -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="truncate">
+                                <span class="text-xs text-slate-400 block uppercase font-medium">Email</span>
+                                <a href="mailto:shanmugasundar.mech@sairamit.edu.in" class="text-xs font-semibold text-slate-800 hover:text-brand-600 truncate block">
+                                    shanmugasundar.mech@sairamit.edu.in
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block uppercase font-medium">Phone</span>
+                                <a href="tel:+919941380398" class="text-xs font-semibold text-slate-800 hover:text-emerald-600">
+                                    +91 9941380398
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm border border-slate-200">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="truncate">
+                                <span class="text-xs text-slate-400 block uppercase font-medium">LinkedIn</span>
+                                <a href="https://www.linkedin.com" target="_blank" class="text-xs font-semibold text-slate-800 hover:text-blue-600 truncate block">
+                                    Dr. G. SHANMUGASUNDAR
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#resume" class="inline-flex items-center gap-2 px-6 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl shadow-lg shadow-brand-500/25 transition">
+                            <i class="fa-solid fa-file-arrow-down"></i> View Resume
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1RK7Nof9QzzKvFCuG95isrOxZw1XOGpQ8?usp=drive_link" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-xl shadow-lg transition">
+                            <i class="fa-solid fa-certificate"></i> Patent Certificates
+                        </a>
+                        <a href="#patents-granted" class="inline-flex items-center gap-2 px-6 py-3.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-xl shadow-lg transition">
+                            <i class="fa-solid fa-award"></i> Granted Patents (11)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QUALIFICATIONS SECTION -->
+    <section id="qualifications" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Academic Qualifications</h2>
+                <p class="text-slate-500 mt-2">Highest academic honors and degrees in Mechanical Engineering & Robotics</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- BE -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Pass Year: 2002</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">B.E – Mechanical Engineering</h3>
+                    <p class="text-sm font-medium text-slate-600 mt-1">Bharathidasan University</p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-sm">
+                        <span class="text-slate-500">Aggregate Score</span>
+                        <span class="font-bold text-slate-900">74%</span>
+                    </div>
+                </div>
+
+                <!-- ME -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Pass Year: 2008</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">M.E – Computer Integrated Manufacturing</h3>
+                    <p class="text-sm font-medium text-slate-600 mt-1">Anna University</p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-sm">
+                        <span class="text-slate-500">Aggregate Score</span>
+                        <span class="font-bold text-slate-900">8.5 CGPA</span>
+                    </div>
+                </div>
+
+                <!-- PhD -->
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Award Year: 2017</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-1">Ph.D. – Robotics</h3>
+                    <p class="text-sm font-medium text-slate-600 mt-1">Anna University</p>
+                    <p class="text-xs text-slate-500 mt-2 italic">
+                        "Modelling Simulation and Analysis of Generic Robot for Inspection"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-16 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Work Experience</h2>
+                <p class="text-slate-500 mt-2">Chronological record of academic leadership and professorship</p>
+            </div>
+
+            <!-- Total Experience Summary -->
+            <div class="max-w-xl mx-auto mb-10 bg-gradient-to-r from-brand-700 to-brand-900 text-white p-6 rounded-2xl shadow-md text-center">
+                <span class="text-xs uppercase tracking-widest text-brand-200 font-semibold block">Total Teaching & Research Experience</span>
+                <span class="text-3xl sm:text-4xl font-extrabold mt-1 block">22 Years, 7 Months, 11 Days</span>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Position 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between gap-4">
+                    <div class="space-y-1">
+                        <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">Current Position</span>
+                        <h3 class="text-xl font-bold text-slate-900 pt-1">Professor & Dean R&D</h3>
+                        <p class="text-slate-600 font-medium">Sri Sairam Engineering College, Chennai</p>
+                    </div>
+                    <div class="text-left md:text-right text-sm text-slate-500 font-semibold flex flex-col justify-center">
+                        <span>27.08.2025 – Till Date</span>
+                        <span class="text-xs text-brand-600">1 Year 1 Month</span>
+                    </div>
+                </div>
+
+                <!-- Position 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between gap-4">
+                    <div class="space-y-1">
+                        <h3 class="text-xl font-bold text-slate-900">Professor</h3>
+                        <p class="text-slate-600 font-medium">Sri Sai Ram Institute of Technology, Chennai</p>
+                    </div>
+                    <div class="text-left md:text-right text-sm text-slate-500 font-semibold flex flex-col justify-center">
+                        <span>04.06.2014 – 26.08.2025</span>
+                        <span class="text-xs text-slate-400">11 Years 2 Months</span>
+                    </div>
+                </div>
+
+                <!-- Position 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row justify-between gap-4">
+                    <div class="space-y-1">
+                        <h3 class="text-xl font-bold text-slate-900">Associate Professor</h3>
+                        <p class="text-slate-600 font-medium">G.K.M College of Engineering & Technology, Chennai</p>
+                    </div>
+                    <div class="text-left md:text-right text-sm text-slate-500 font-semibold flex flex-col justify-center">
+                        <span>26.11.2002 – 30.05.2014</span>
+                        <span class="text-xs text-slate-400">11 Years 6 Months</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARDS & HONORS SECTION -->
+    <section id="awards" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Awards, Honors & Leadership</h2>
+                <p class="text-slate-500 mt-2">Recognitions, professional memberships, and editorial contributions</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Award Card 1 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-star text-amber-500 text-xl"></i>
+                        <h4 class="font-bold text-slate-900">NPTEL Awards</h4>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>NPTEL Star – Believer Award (Apr 2023)</li>
+                        <li>NPTEL Star – Believer Award (Dec 2023)</li>
+                        <li>NPTEL Enthusiast Award (Dec 2023)</li>
+                    </ul>
+                </div>
+
+                <!-- Award Card 2 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-trophy text-amber-500 text-xl"></i>
+                        <h4 class="font-bold text-slate-900">Publishers & Research Awards</h4>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>Best Student Project Guidance Award 2023 (INSC)</li>
+                        <li>Best Student Project Guidance Award 2022 (INSC)</li>
+                        <li>Best Researcher Award 2022 (INSC)</li>
+                        <li>CIEMA Research Excellence Award 2022 (MCKV)</li>
+                    </ul>
+                </div>
+
+                <!-- Award Card 3 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-user-tie text-brand-600 text-xl"></i>
+                        <h4 class="font-bold text-slate-900">Institutional Roles</h4>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>IEI – KLC Secretary</li>
+                        <li>IEEE – Robotics & Automation Society Student Counselor</li>
+                        <li>MOE's IIC – Convener</li>
+                        <li>Board of Studies (BOS) Member – ROBOARM Co.</li>
+                    </ul>
+                </div>
+
+                <!-- Award Card 4 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-book-open text-brand-600 text-xl"></i>
+                        <h4 class="font-bold text-slate-900">Editorial & Reviewer Roles</h4>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>Editor: "Design, Modeling & Fabrication of Advanced Robots"</li>
+                        <li>Editorial Board Member: IJAME</li>
+                        <li>Associate Editor: REST Journal on Advances in Mech. Eng.</li>
+                        <li>Review Committee: Int. Conf. on Intelligent Robotics (VIT)</li>
+                    </ul>
+                </div>
+
+                <!-- Award Card 5 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-award text-amber-500 text-xl"></i>
+                        <h4 class="font-bold text-slate-900">Engineering Honors</h4>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>IEI Best Faculty Adviser Award 2021 (IEI Hosur Center)</li>
+                        <li>Eminent Engineer Award 2012 (G.K.M. College)</li>
+                        <li>Best Paper Presentation Awards in Conferences</li>
+                    </ul>
+                </div>
+
+                <!-- Award Card 6 -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-chalkboard-user text-brand-600 text-xl"></i>
+                        <h4 class="font-bold text-slate-900">Academic Leadership</h4>
+                    </div>
+                    <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
+                        <li>Results Passing Board Member & Valuation Chairman</li>
+                        <li>Session Chair & Resource Person in FDPs</li>
+                        <li>Advisory Committee Member: RSRI CRSE 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS SECTION -->
+    <section id="publications" class="py-16 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Peer-Reviewed Publications</h2>
+                    <p class="text-slate-500 mt-1">High-impact research articles in journals, Springer books, and Scopus proceedings</p>
+                </div>
+                <div class="w-full md:w-72">
+                    <input type="text" id="pub-search" placeholder="Search publications..." class="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+            </div>
+
+            <!-- Publications Container -->
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="divide-y divide-slate-100 max-h-[600px] overflow-y-auto p-4 space-y-4" id="pub-list">
+                    <!-- Publication Items -->
+                    <div class="pub-item p-4 rounded-xl hover:bg-slate-50 transition border border-slate-100">
+                        <div class="flex justify-between items-start gap-2">
+                            <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">2026</span>
+                            <a href="https://doi.org/10.1051/epjconf/202636702003" target="_blank" class="text-xs text-brand-600 hover:underline"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI Link</a>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mt-1">Design and development of police emergency response drone system (PERDS)</h4>
+                        <p class="text-xs text-slate-600 mt-1">Prasad, R. H., Lithesh, U., & Shanmugasundar, G. (2026). <em>EPJ Web of Conferences</em>, 367, 02003.</p>
+                    </div>
+
+                    <div class="pub-item p-4 rounded-xl hover:bg-slate-50 transition border border-slate-100">
+                        <div class="flex justify-between items-start gap-2">
+                            <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">2025</span>
+                            <a href="https://doi.org/10.46632/dmfar/4/2/2" target="_blank" class="text-xs text-brand-600 hover:underline"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI Link</a>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mt-1">Vehicle monitoring system and governance</h4>
+                        <p class="text-xs text-slate-600 mt-1">Shanmugasundar, G., & Srinivass, K. (2025). <em>Design, Modelling and Fabrication of Advanced Robots</em>, 4(2), 16–18.</p>
+                    </div>
+
+                    <div class="pub-item p-4 rounded-xl hover:bg-slate-50 transition border border-slate-100">
+                        <div class="flex justify-between items-start gap-2">
+                            <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">2025</span>
+                            <a href="https://doi.org/10.46632/dmfar/4/2/3" target="_blank" class="text-xs text-brand-600 hover:underline"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI Link</a>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mt-1">Development of smart IoT based life jacket for workers</h4>
+                        <p class="text-xs text-slate-600 mt-1">Shanmugasundar, G., & Newton Solomon Raj, R. (2025). <em>Design, Modelling and Fabrication of Advanced Robots</em>, 4(2), 19–24.</p>
+                    </div>
+
+                    <div class="pub-item p-4 rounded-xl hover:bg-slate-50 transition border border-slate-100">
+                        <div class="flex justify-between items-start gap-2">
+                            <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">2025</span>
+                            <a href="https://doi.org/10.1007/s40032-025-01249-x" target="_blank" class="text-xs text-brand-600 hover:underline"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI Link</a>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mt-1">Enhancing drilling fluid filtration with novel swarm-intelligent adaptive XGBoosting-based analysis of nanoparticles</h4>
+                        <p class="text-xs text-slate-600 mt-1">Shanmugasundar, G., Dutta, P., Chohan, J. S., Swarna, B., & Muniyandy, E. (2025). <em>Journal of the Institution of Engineers (India): Series C</em>, 106(5), 1601–1610.</p>
+                    </div>
+
+                    <div class="pub-item p-4 rounded-xl hover:bg-slate-50 transition border border-slate-100">
+                        <div class="flex justify-between items-start gap-2">
+                            <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">2025</span>
+                            <a href="https://doi.org/10.1007/978-3-031-78440-8_10" target="_blank" class="text-xs text-brand-600 hover:underline"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI Link</a>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mt-1">Innovative machine learning techniques for pedestrian detection in autonomous vehicles</h4>
+                        <p class="text-xs text-slate-600 mt-1">Shanmugasundar, G. (2025). <em>Studies in Computational Intelligence</em> (Vol. 806, pp. 231–247). Springer.</p>
+                    </div>
+
+                    <div class="pub-item p-4 rounded-xl hover:bg-slate-50 transition border border-slate-100">
+                        <div class="flex justify-between items-start gap-2">
+                            <span class="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-0.5 rounded">2024</span>
+                            <a href="https://doi.org/10.1016/j.engappai.2023.107045" target="_blank" class="text-xs text-brand-600 hover:underline"><i class="fa-solid fa-arrow-up-right-from-square"></i> DOI Link</a>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-base mt-1">Investigating the influence of dimensionality reduction on force estimation in robotic-assisted surgery</h4>
+                        <p class="text-xs text-slate-600 mt-1">Sabique, P. V., Pasupathy, G., Ramachandran, S., & Shanmugasundar, G. (2023). <em>Engineering Applications of Artificial Intelligence</em>, 126, 107045.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-slate-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 space-y-4">
+                        <span class="px-3 py-1 bg-brand-500/30 text-brand-200 border border-brand-400/30 rounded-full text-xs font-semibold uppercase tracking-wider inline-flex items-center gap-1.5">
+                            <i class="fa-solid fa-file-pdf"></i> Curriculum Vitae
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+                            Dr. G. Shanmugasundar's Official Resume
+                        </h2>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            Access the complete, updated curriculum vitae containing full academic history, patents, research projects, industrial consultancy, and publications.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="https://docs.google.com/document/d/17xdFNiPyorv3YbZkw9xKdPWVudI-B3S7/edit?usp=drive_link" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-lg transition">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Resume (Google Doc)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 flex justify-center">
+                        <div class="w-full max-w-xs bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl text-center space-y-3">
+                            <div class="w-16 h-16 bg-brand-500 text-white rounded-full flex items-center justify-center text-2xl mx-auto">
+                                <i class="fa-solid fa-file-check"></i>
+                            </div>
+                            <h4 class="font-bold text-lg text-white">Full Profile Verified</h4>
+                            <p class="text-xs text-slate-300">Verified by Sri Sairam Engineering College R&D Cell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATENTS PUBLISHED SECTION -->
+    <section id="patents-published" class="py-16 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <!-- Drive Link Header Box -->
+            <div class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white rounded-3xl p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 bg-blue-500/30 text-blue-200 border border-blue-400/30 rounded-full text-xs font-semibold uppercase tracking-wider">
+                            <i class="fa-solid fa-file-pdf"></i> Official Document
+                        </span>
+                        <span class="bg-blue-500 text-white text-xs font-extrabold px-2.5 py-1 rounded-full">28 Published</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold">Patents Published Document</h2>
+                    <p class="text-slate-300 text-sm">View or download the official Indian Patent Office (inPASS) publication details directly from Google Drive.</p>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/file/d/1IwJcR2igb0LJtWNgL4JMTu1yh7_zyiyM/view?usp=drive_link" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg transition whitespace-nowrap">
+                        <i class="fa-brands fa-google-drive text-lg"></i> Open Published Patents (Google Drive)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Published Patents Table Section -->
+            <div>
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Searchable Published Patents Registry</h3>
+                        <p class="text-xs text-slate-500 mt-0.5">Filter records below or search by patent title / application number</p>
+                    </div>
+                    <div class="w-full md:w-72">
+                        <input type="text" id="published-search" placeholder="Filter published patents..." class="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 text-xs uppercase font-bold tracking-wider">
+                                <th class="p-4">App Number</th>
+                                <th class="p-4">Patent Title</th>
+                                <th class="p-4">App Date</th>
+                                <th class="p-4">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-xs sm:text-sm text-slate-700" id="published-table">
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202641074342</td>
+                                <td class="p-4 font-semibold text-slate-900">A SMART MEDICINE VERIFICATION SYSTEM USING ARTIFICIAL INTELLIGENCE, OPTICAL CHARACTER RECOGNITION AND LARGE LANGUAGE MODELS</td>
+                                <td class="p-4 whitespace-nowrap">16/06/2026</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202641069541</td>
+                                <td class="p-4 font-semibold text-slate-900">POLICE EMERGENCY RESPONSE DRONE SYSTEM</td>
+                                <td class="p-4 whitespace-nowrap">03/06/2026</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202641003454</td>
+                                <td class="p-4 font-semibold text-slate-900">EMBEDDED TWO-WHEELED AUTONOMOUS ROBOT NAVIGATION SYSTEM UTILIZING GRAYSCALE-OPTIMIZED VISION PROCESSING AND SENSOR FUSION</td>
+                                <td class="p-4 whitespace-nowrap">13/01/2026</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202541071893</td>
+                                <td class="p-4 font-semibold text-slate-900">DESIGN AND DEVELOPMENT OF GESTURE CONTROLLED LIGHT ROBOTIC ARM</td>
+                                <td class="p-4 whitespace-nowrap">29/07/2025</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202541067407</td>
+                                <td class="p-4 font-semibold text-slate-900">SMART WEARABLE HELMET MONITORING SYSTEM WITH INTEGRATED PHYSIOLOGICAL AND IMPACT SENSING FOR REAL-TIME</td>
+                                <td class="p-4 whitespace-nowrap">15/07/2025</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202541053651</td>
+                                <td class="p-4 font-semibold text-slate-900">HYBRID RANDOM FOREST AND NEURAL NETWORK BASED SYSTEM FOR ADAPTIVE COURSE SELECTION WITH WEB SCRAPING AI-PROCTORED ASSESSMENTS</td>
+                                <td class="p-4 whitespace-nowrap">03/06/2025</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202541018364</td>
+                                <td class="p-4 font-semibold text-slate-900">ENHANCED AI-POWERED SECURITY SYSTEM FOR REAL-TIME FACE RECOGNITION AND MULTI-MODAL ALERTS</td>
+                                <td class="p-4 whitespace-nowrap">03/03/2025</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-brand-700">202541018352</td>
+                                <td class="p-4 font-semibold text-slate-900">ADAPTIVE AI-ENABLED WATER DISPENSER FOR ACCESSIBILITY USING VOICE COMMANDS, FACIAL GESTURES AND HEAD MOVEMENT CONTROL</td>
+                                <td class="p-4 whitespace-nowrap">03/03/2025</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold text-xs rounded-full border border-blue-200">Published</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATENTS GRANTED & CERTIFICATES SECTION -->
+    <section id="patents-granted" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <!-- Patent Certificates Google Drive Link Header Box -->
+            <div class="bg-gradient-to-r from-amber-950 via-amber-900 to-slate-900 text-white rounded-3xl p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 bg-amber-500/30 text-amber-200 border border-amber-400/30 rounded-full text-xs font-semibold uppercase tracking-wider">
+                            <i class="fa-solid fa-folder-open"></i> Google Drive Repository
+                        </span>
+                        <span class="bg-amber-500 text-white text-xs font-extrabold px-2.5 py-1 rounded-full">Official Folder</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold">Patent Certificates Folder</h2>
+                    <p class="text-slate-300 text-sm">Access and view all granted patent certificates directly from Google Drive.</p>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/drive/folders/1RK7Nof9QzzKvFCuG95isrOxZw1XOGpQ8?usp=drive_link" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 bg-amber-600 hover:bg-amber-500 text-white font-bold rounded-xl shadow-lg transition whitespace-nowrap">
+                        <i class="fa-brands fa-google-drive text-lg"></i> Open Patent Certificates Folder
+                    </a>
+                </div>
+            </div>
+
+            <!-- Granted Patents Register Header Box -->
+            <div class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-slate-900 text-white rounded-3xl p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <span class="px-3 py-1 bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 rounded-full text-xs font-semibold uppercase tracking-wider">
+                            <i class="fa-solid fa-certificate"></i> Granted Patents Document
+                        </span>
+                        <span class="bg-emerald-500 text-white text-xs font-extrabold px-2.5 py-1 rounded-full">11 Granted</span>
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold">Patents Granted Register</h2>
+                    <p class="text-slate-300 text-sm">View or download the official Indian Patent Office granted patents register directly from Google Drive.</p>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/file/d/1nZHWOq-Q_-Mfd3Zx1OxPYfJ-hKBr-CRD/view?usp=drive_link" target="_blank" class="inline-flex items-center gap-2 px-6 py-3.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl shadow-lg transition whitespace-nowrap">
+                        <i class="fa-brands fa-google-drive text-lg"></i> Open Granted Patents Document
+                    </a>
+                </div>
+            </div>
+
+            <!-- Granted Patents Table Section -->
+            <div>
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Searchable Granted Patents Registry</h3>
+                        <p class="text-xs text-slate-500 mt-0.5">Filter legally awarded patents below or search by title / application number</p>
+                    </div>
+                    <div class="w-full md:w-72">
+                        <input type="text" id="granted-search" placeholder="Filter granted patents..." class="w-full px-4 py-2 bg-white border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-700 text-xs uppercase font-bold tracking-wider">
+                                <th class="p-4">App Number</th>
+                                <th class="p-4">Patent Title</th>
+                                <th class="p-4">Grant Date</th>
+                                <th class="p-4">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-xs sm:text-sm text-slate-700" id="granted-table">
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-emerald-700">202441002150</td>
+                                <td class="p-4 font-semibold text-slate-900">A WEARABLE SYSTEM FOR CONTINUOUSLY MONITORING THE SLEEP ACTIVITY OF A DRIVER</td>
+                                <td class="p-4 whitespace-nowrap">11/01/2024</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 font-bold text-xs rounded-full border border-emerald-200">Granted</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-emerald-700">202241076703</td>
+                                <td class="p-4 font-semibold text-slate-900">BRAIN COMPUTER INTERFACED (BCI) SYSTEM FOR NON CONTACT CONTROLLING OF THE NAVIGATIONAL DEVICE TO ASSIST THE PHYSICALLY CHALLENGED USERS</td>
+                                <td class="p-4 whitespace-nowrap">29/12/2022</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 font-bold text-xs rounded-full border border-emerald-200">Granted</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-emerald-700">202241051542</td>
+                                <td class="p-4 font-semibold text-slate-900">NEURO SIGNAL AND VOICE DATA CONTROLLED TRAVELLING EQUIPMENT</td>
+                                <td class="p-4 whitespace-nowrap">09/09/2022</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 font-bold text-xs rounded-full border border-emerald-200">Granted</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-emerald-700">202241048098</td>
+                                <td class="p-4 font-semibold text-slate-900">A WHEEL CHAIR CONVERTIBLE TO A TRANSPORTABLE STRETCHER BASED ON HUMAN INTERACTIONS</td>
+                                <td class="p-4 whitespace-nowrap">24/08/2022</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 font-bold text-xs rounded-full border border-emerald-200">Granted</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-emerald-700">202141048478</td>
+                                <td class="p-4 font-semibold text-slate-900">A ROBOTIC DEVICE TO CLEAN TANKS /DRUMS</td>
+                                <td class="p-4 whitespace-nowrap">25/10/2021</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 font-bold text-xs rounded-full border border-emerald-200">Granted</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-4 font-mono font-bold text-emerald-700">202141046635</td>
+                                <td class="p-4 font-semibold text-slate-900">AN AUTOMATED GUIDED MOBILE ROBOT WITH IMAGE RECOGNITION</td>
+                                <td class="p-4 whitespace-nowrap">13/10/2021</td>
+                                <td class="p-4"><span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 font-bold text-xs rounded-full border border-emerald-200">Granted</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="text-white font-extrabold text-xl">Dr. G. Shanmugasundar</div>
+            <p class="text-sm text-slate-400">Professor & Dean R&D | Sri Sairam Engineering College, Chennai, Tamil Nadu</p>
+            <div class="flex justify-center gap-4 text-lg text-slate-400">
+                <a href="https://www.linkedin.com" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:shanmugasundar.mech@sairamit.edu.in" class="hover:text-brand-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://drive.google.com/drive/folders/1RK7Nof9QzzKvFCuG95isrOxZw1XOGpQ8?usp=drive_link" target="_blank" class="hover:text-amber-400 transition" title="Patent Certificates"><i class="fa-solid fa-certificate"></i></a>
+            </div>
+            <div class="text-xs text-slate-500">
+                &copy; 2026 Dr. G. Shanmugasundar. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Table Filtering -->
+    <script>
+        // Toggle Mobile Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Interactive Search for Publications
+        document.getElementById('pub-search').addEventListener('keyup', function() {
+            const query = this.value.toLowerCase();
+            const items = document.querySelectorAll('#pub-list .pub-item');
+            items.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                item.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        });
+
+        // Interactive Search for Published Patents
+        document.getElementById('published-search').addEventListener('keyup', function() {
+            const query = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#published-table tr');
+            rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                row.style.display = text.includes(query) ? '' : 'none';
+            });
+        });
+
+        // Interactive Search for Granted Patents
+        document.getElementById('granted-search').addEventListener('keyup', function() {
+            const query = this.value.toLowerCase();
+            const rows = document.querySelectorAll('#granted-table tr');
+            rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                row.style.display = text.includes(query) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
